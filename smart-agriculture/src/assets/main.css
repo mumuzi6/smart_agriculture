@@ -1,0 +1,84 @@
+:root {
+  /* 主色调 */
+  --primary-color: #4CAF50;
+  --primary-dark: #388E3C;
+  --primary-light: #A5D6A7;
+  
+  /* 中性色 */
+  --white: #FFFFFF;
+  --gray-100: #F5F5F5;
+  --gray-200: #EEEEEE;
+  --gray-300: #E0E0E0;
+  --gray-400: #BDBDBD;
+  --gray-500: #9E9E9E;
+  --gray-600: #757575;
+  --gray-700: #616161;
+  --gray-800: #424242;
+  --gray-900: #212121;
+  
+  /* 功能色 */
+  --success: #4CAF50;
+  --warning: #FFC107;
+  --danger: #F44336;
+  --info: #2196F3;
+  
+  /* 字体 */
+  --font-family-sans: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+  --font-family-serif: "SimSun", serif;
+}
+
+/* 基础排版 */
+body {
+  font-family: var(--font-family-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--gray-900);
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-sans);
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: var(--gray-900);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* 容器 */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* 响应式工具 */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+} 
