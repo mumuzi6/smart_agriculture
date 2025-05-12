@@ -29,7 +29,7 @@
               <div class="message-time">{{ message.time }}</div>
             </div>
             <div class="message-avatar" v-if="message.type === 'user'">
-              <img src="../assets/images/user-avatar.png" alt="用户">
+              <img src="../assets/images/用户头像.jpg" alt="用户">
             </div>
           </div>
 
